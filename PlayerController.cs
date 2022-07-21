@@ -42,6 +42,5 @@ public class PlayerController : Character
     {
         _velocity += 
             Vector3.Scale(_acceleration, playerControllerAccelerationMultiplier) * Time.deltaTime;
-        if (_velocity.magnitude > _maxVelocity.magnitude) _velocity = _maxVelocity;
     }
 }
