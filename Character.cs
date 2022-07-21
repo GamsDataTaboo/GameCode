@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Character : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Vector3 moveSpeed;
+    [SerializeField] Vector3 moveSpeedMod;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] Vector3 velocity;
+
+
+    public void Move()
     {
-        
+        transform.Translate(velocity);
     }
 }
