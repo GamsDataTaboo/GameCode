@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] Vector3 _acceleration;
+    [SerializeField] protected Vector3 _acceleration;
 
-    [SerializeField] Vector3 _velocity;
-    [SerializeField] Vector3 _velocityMultiplier = Vector3.one;
+    [SerializeField] protected Vector3 _velocity;
+    [SerializeField] protected Vector3 _velocityMultiplier = Vector3.one;
 
 
     public void Move()
